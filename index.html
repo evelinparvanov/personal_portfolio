@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evelin's Portfolio</title>
+    <link href="/static/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div id="header">
+          <div class="container">
+            <nav>
+              <h2 class="doc-header">Portfolio</h2>
+              <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+              </ul>
+              <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+              <p>Hey, I'm Evelin Parvanov</p>
+              <h1>A <span>Python Developer</span> specializing in <br>data science, machine learning, and AI,<br> adept at creating innovative solutions.</h1>
+              <img src="/images/img1.png" width="400" >
+            </div>
+          </div>
+        </div>         
+    </header>
+
+    <!-- ----------About---------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/images/profile_pic.jpg">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Experienced Python data scientist proficient in machine learning and web scraping.
+              Skilled in extracting, analyzing, and visualizing data to derive actionable insights.
+              Expertise in deploying ML models for predictive analytics.
+              Passionate about leveraging technology to solve complex problems and drive innovation in data-driven decision-making.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Python</span><br>Mastering the art of Python programming</li>
+                <li><span>Data Science</span><br>Extracting meaningful insights for business</li>
+                <li><span>Machine Learning</span><br>Developing tatistical algorithms that can learn from data</li>
+                <li><span>Web Scraping</span><br>Building Web Scraping Applications</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2022</span><br>Internship at "Company".</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2024</span><br>Graduating from Computer Science School</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- ----------Portfolio---------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="/images/work1.png">
+            <div class="layer">
+              <h3>App</h3>
+              <p>Description</p>
+              <a href="#"><i class="fas fa-external-link-square-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/images/work1.png">
+            <div class="layer">
+              <h3>App</h3>
+              <p>Description</p>
+              <a href="#"><i class="fas fa-external-link-square-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/images/work1.png">
+            <div class="layer">
+              <h3>App</h3>
+              <p>Description</p>
+              <a href="#"><i class="fas fa-external-link-square-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    </div>
+
+    <!-- ----------Contact---------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i> evelinparvanov@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i> +359 87 722 6994</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/evelinparvanov/"><i class="fab fa-instagram"></i></a>
+              <a href="https://github.com/evelinparvanov"><i class="fab fa-github"></i></a>
+            </div>
+            <a href="" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="text" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message" style="resize: none;"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="copyright">
+        <p>Copyright ©. Made by Evelin</p>
+      </div>
+    </footer>
+    
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
