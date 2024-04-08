@@ -422,18 +422,9 @@ nav .fas {
         cursor: pointer;
     }
 
-    .doc-header {
-        visibility: hidden; /* Hide the original text */
-    }
-
-    .doc-header::after {
-        content: "Evelin";
-        margin-top: 11px;
-        margin-left: 35px;
-        visibility: visible;
-        position: absolute;
-        top: 0;
-        left: 0;
+    .work-list .work img {
+        height: 100%;
+        width: 100%;
     }
 
     .sub-title {

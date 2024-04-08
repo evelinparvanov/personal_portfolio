@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evelin's Portfolio</title>
-    <link href="/static/css/styles.css" rel="stylesheet">
+    <link href="personal_portfolio/static/css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
         <div id="header">
           <div class="container">
             <nav>
-              <h2 class="doc-header">Portfolio</h2>
+              <h2 class="doc-header">Evelin.</h2>
               <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -27,7 +27,7 @@
             <div class="header-text">
               <p>Hey, I'm Evelin Parvanov</p>
               <h1>A <span>Python Developer</span> specializing in <br>data science, machine learning, and AI,<br> adept at creating innovative solutions.</h1>
-              <img src="/images/img1.png" width="400" >
+              <img src="/personal_portfolio/images/img1.png" width="400" >
             </div>
           </div>
         </div>         
@@ -38,7 +38,7 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="/images/profile_pic.jpg">
+            <img src="/personal_portfolio/images/profile_pic.jpg">
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
@@ -63,7 +63,7 @@
             </div>
             <div class="tab-contents" id="experience">
               <ul>
-                <li><span>2022</span><br>Internship at "Company".</li>
+                <li><span>2024</span><br>Internship at "Company".</li>
               </ul>
             </div>
             <div class="tab-contents" id="education">
@@ -82,31 +82,39 @@
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
           <div class="work">
-            <img src="/images/work1.png">
+            <img src="/personal_portfolio/images/work4.jpg" height="425">
             <div class="layer">
-              <h3>App</h3>
+              <h3>Stock News App</h3>
+              <p>
+                This Python script monitors the stock price of any company you choose, using two APIs.
+                If the chosen stock's price change exceeds 5% from the last price, it emails you selected news article about the company along with the percentage change.
+              </p>
+              <a href="https://github.com/evelinparvanov/stock_news"><i class="fas fa-external-link-square-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/personal_portfolio/images/work6.png" height="425">
+            <div class="layer">
+              <h3>Crypto Trading Bot</h3>
               <p>Description</p>
               <a href="#"><i class="fas fa-external-link-square-alt"></i></a>
             </div>
           </div>
           <div class="work">
-            <img src="/images/work1.png">
+            <img src="/personal_portfolio/images/work8.webp" height="425">
             <div class="layer">
-              <h3>App</h3>
-              <p>Description</p>
-              <a href="#"><i class="fas fa-external-link-square-alt"></i></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="/images/work1.png">
-            <div class="layer">
-              <h3>App</h3>
-              <p>Description</p>
-              <a href="#"><i class="fas fa-external-link-square-alt"></i></a>
+              <h3>Web Scraper</h3>
+              <p>
+                Python web scraper that utilizes Selenium and Chrome WebDriver to scrape data from CoinMarketCap's trending cryptocurrencies page,
+                extracting details such as rank, name, symbol, price, and various changes over time.
+                It then formats this data into a CSV file named with the current date,
+                providing timely insights into the cryptocurrency market's top 30 performers.
+              </p>
+              <a href="https://github.com/evelinparvanov/crypto_scraper"><i class="fas fa-external-link-square-alt"></i></a>
             </div>
           </div>
         </div>
-        <a href="#" class="btn">See more</a>
+        <a href="https://github.com/evelinparvanov?tab=repositories" class="btn">See more</a>
       </div>
     </div>
     </div>
@@ -123,7 +131,7 @@
               <a href="https://www.instagram.com/evelinparvanov/"><i class="fab fa-instagram"></i></a>
               <a href="https://github.com/evelinparvanov"><i class="fab fa-github"></i></a>
             </div>
-            <a href="" download class="btn btn2">Download CV</a>
+            <!-- <a href="" download class="btn btn2">Download CV</a> -->
           </div>
           <div class="contact-right">
             <form name="submit-to-google-sheet">
@@ -140,11 +148,11 @@
 
     <footer>
       <div class="copyright">
-        <p>Copyright ©. Made by Evelin</p>
+        <p>Copyright © 2024. Made by Evelin Parvanov</p>
       </div>
     </footer>
     
 
-    <script src="/static/js/script.js"></script>
+    <script src="/personal_portfolio/static/js/script.js"></script>
 </body>
 </html>
