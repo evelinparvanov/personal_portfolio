@@ -423,7 +423,11 @@ nav .fas {
     }
 
     .work-list .work .layer{
-        font-size: 80%;
+        width: 100%; /* Make the container take up the full width of the viewport */
+        max-width: 100%; /* Ensure the container doesn't overflow horizontally */
+        overflow-x: hidden; /* Hide horizontal overflow */
+        overflow-y: auto; /* Enable vertical scrolling when needed */
+        -webkit-overflow-scrolling: touch;
     }
 
     .work-list .work img {
