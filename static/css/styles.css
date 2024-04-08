@@ -422,6 +422,11 @@ nav .fas {
         cursor: pointer;
     }
 
+    .work-list .work .layer{
+        height: 100%;
+        width: 100%;
+    }
+
     .work-list .work img {
         height: 100%;
         width: 100%;
